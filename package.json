@@ -1,0 +1,29 @@
+{
+  "name": "kemomimijudge-queuemanager",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "author": "Tatsuto Yamamoto",
+  "license": "MIT",
+  "scripts": {
+    "start": "npx tsc -p . --noImplicitAny && echo *build done* &&node ./build/main.js",
+    "build": "npx tsc -p . --noImplicitAny",
+    "lint": "eslint --ignore-path .gitignore 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint:fix": "eslint --ignore-path .gitignore 'src/**/*.{js,jsx,ts,tsx}' --fix",
+    "format": "prettier --write src/"
+  },
+  "dependencies": {
+    "@types/node": "^16.11.6",
+    "@typescript-eslint/eslint-plugin": "^5.2.0",
+    "@typescript-eslint/parser": "^5.2.0",
+    "axios": "^0.24.0",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1",
+    "ts-node": "^10.4.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.4"
+  }
+}
